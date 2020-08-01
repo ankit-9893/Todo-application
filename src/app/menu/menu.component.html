@@ -1,0 +1,23 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div>
+            <a href="#" class="navbar-brand">Todo</a>
+        </div>
+        <ul class="navbar-nav">
+            <li>
+                <a *ngIf="loggedIn" routerLink="/welcome/user98" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a *ngIf="loggedIn" routerLink="/todos" class="nav-link">Todos</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li>
+                <a *ngIf="!loggedIn" routerLink="/login" class="nav-link">Login</a>
+            </li>
+            <li>
+                <a *ngIf="loggedIn" routerLink="/logout" class="nav-link">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>

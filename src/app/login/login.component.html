@@ -1,0 +1,6 @@
+<small *ngIf="invalidLogin">Invalid Credentials</small>
+<div>
+    User Name : <input type="text" name="usernane" [(ngModel)]="username">
+    Password : <input type="password" name="{{ password }}" [(ngModel)]="password">
+    <button (click)="jwtAuthentiation()">Login</button>
+</div>
